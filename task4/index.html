@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 2px;
+        }
+        .container{
+            height: 100%;   
+            display: grid;
+            grid-template-columns:repeat(3,1fr);  
+            grid-template-rows: repeat(3,1fr);      
+        }
+        .container>div{
+            background-color: black;
+            border: 100px solid black;
+            color: white;
+            font-size: larger;
+        }
+        .item1{
+           grid-column: 1/4;
+           text-align: center;
+           border: 1px solid white;
+        }
+        .item2{
+            
+        }
+        .item3{
+            
+        }
+        .item4{
+            
+        }
+        .item5{
+            grid-column: 1/4;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item1">Header</div>
+    <div class="item2">Right-body</div>
+    <div class="item3">Main-body</div>
+    <div class="item4">Left-body</div>
+    <div class="item5">Footer</div>
+</div>
+</body>
+</html>
